@@ -1,0 +1,10 @@
+rename this file to config.txt and remove this line
+port = {port on which this service would run}
+ip_address = {ip address 0.0.0.0 for public and localhost for private i think never tested}
+email = {your email eg helloWorld@dastaans.co}
+email_password = {your password for email eg ErenYeagerWasWrong. Note gmail require app password of something}
+email_host = {email host eg: smtp://smtp.example.com:587}
+tracking_url = default {keep it default}
+domain = {url it should append at the end of email} https://mypublicip:port
+username = {username require to send email}
+password = {password for that}
