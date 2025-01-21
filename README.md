@@ -30,3 +30,46 @@ The body of the request should follow this structure. Below are images showcasin
 ### Image 2: [Body of Request 2](path/to/image2.jpg)
 
 ![Body of Request 2](imgs/image2.png)
+
+## How to Run the Email Service
+
+To run the email service microservice, follow these steps:
+
+### 1. Install Dependencies
+
+#### Install Oat:
+
+Follow the installation instructions for **Oat** from its official site or package manager.
+
+#### Install Vmime:
+
+Follow the installation instructions for **Vmime** from its official site or package manager.
+
+### 2. Build
+#### Create the build directory:
+
+```bash
+mkdir build 
+```
+
+#### Navigate into the build directory:
+
+```bash
+cd build
+```
+#### Run cmake to configure the build:
+
+```bash
+cmake ..
+```
+#### Compile the code using make:
+
+```bash
+make
+```
+#### Run the email service executable:
+
+```bash
+./email_service-exe
+```
+This will start the email service microservice on your local machine.
