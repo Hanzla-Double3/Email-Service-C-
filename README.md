@@ -29,4 +29,4 @@ The body of the request should follow this structure. Below are images showcasin
 
 ### Image 2: [Body of Request 2](path/to/image2.jpg)
 
-![Body of Request 2](imgs/image2.jpg)
+![Body of Request 2](imgs/image2.png)
