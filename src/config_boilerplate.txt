@@ -8,3 +8,6 @@ tracking_url = default {keep it default}
 domain = {url it should append at the end of email} https://mypublicip:port
 username = {username require to send email}
 password = {password for that}
+db_pass = { database pass }
+db_ip = 127.0.0.1 {ip address}
+db_port = 5432 {port}

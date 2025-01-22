@@ -11,7 +11,7 @@
 #include "oatpp/macro/component.hpp"
 #include "oatpp/utils/Conversion.hpp"
 #include "EmailUtility/EmailHandler.cpp"
-#include "database/databaseWrapper.cpp"
+#include "database/psql.h"
 
 #define getInput(dto, obj, key, holder) \
     auto holder = dto->obj[key]; \
@@ -43,7 +43,7 @@ public:
     if(id){
       uint32_t intID = atoi(id.get()->c_str());
 
-      TrackingDatabase *db = TrackingDatabase::getInstance();
+      PSQLTrackingDB *db = PSQLTrackingDB::getInstance();
       db->readMessage(intID);
     }
 
@@ -77,7 +77,7 @@ public:
       uint32_t trackingId = 0;
       if (tracking_url == "default")
       {
-        TrackingDatabase *db = TrackingDatabase::getInstance();
+        PSQLTrackingDB *db = PSQLTrackingDB::getInstance();
         trackingId = db->addMessage();
         tracking_url = Config::get("domain") + "/image?id=" + std::to_string(trackingId);
       }

@@ -15,7 +15,7 @@ add_library(${project_name}-lib
         src/config/config.cpp
         src/config/config.h
 
-        src/database/database.cpp
+        src/database/psql.cpp
 )
 
 ## link libs
@@ -26,6 +26,8 @@ target_link_libraries(${project_name}-lib
         PUBLIC oatpp::oatpp-test
 
         PUBLIC vmime
+        PUBLIC pqxx 
+        PUBLIC pq
 )
 
 target_include_directories(${project_name}-lib PUBLIC src)

@@ -32,8 +32,9 @@ void appendTrackingImage(std::string &content, const std::string &trackingUrl){
             // Insert the tracking image before the closing </html> tag
             content.insert(htmlPos, trackingUrl);
         } else {
+            std::string imageTag = "<img src=\"" + trackingUrl + "\">";
             // Append the tracking image to the end
-            content.append(trackingUrl);
+            content.append(imageTag);
         }
     }
 
