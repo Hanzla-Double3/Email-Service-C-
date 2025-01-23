@@ -13,11 +13,11 @@ I dream of a social media platform where users can share their stories. Initiall
 - **Story Sharing**: Users can create and share their stories.
 - **Legacy Sharing**: Users can schedule their stories to be sent to someone after a certain time or upon their inactivity.
 - **Microservice Architecture**: The system is being built with a microservice approach.
-- **Open-Source**: Dastaans 2.0 is open-source and free for everyone.
+- **Open-Source**: Dastaans 2.0 is open-source and free for everyone (until I can afford).
 
 ## Email Service Microservice
 
-Here is the first microservice of Dastaans—the email service. It undoubtedly has some bugs, as it has been a while since I worked with C++. Even then, I only knew the basics, but it was my favorite language. I will keep improving it. It may not have a plethora of features, but I aim to make it simple, yet powerful.
+Here is the first microservice of Dastaans—the email service. It undoubtedly has some bugs, as it has been a while since I worked with C++. Even then, I only knew the basics, but it was my favorite language. I will keep improving it. It may not have a plethora of features, but I aim to make it simple, yet powerful. I doesn't have some mechanism of password hashing, as it will be run locally. And as for the tracking url, another service that will have exposure to internet, will send request to this service. I have included the mechanism for database creation in it. Not a good thing to do. But I hate to configure things.
 
 ## Request Body Example
 
@@ -44,6 +44,10 @@ Follow the installation instructions for **Oat** from its official site or packa
 #### Install Vmime:
 
 Follow the installation instructions for **Vmime** from its official site or package manager.
+
+#### Install pqxx
+
+I dont know, maybe sudo get install something. Google it.
 
 ### 2. Build
 #### Create the build directory:
